@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="form" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="body">
+    <main>
+
+      <h1 class="header">Formularz</h1>
+
+      <form class="form">
+
+        <fieldset>
+          <legend>Dane:</legend>
+          <p>
+            <label for="firstName">Imię:</label>
+            <input class="form__item" id="firstName" name="firstName" />
+          </p>
+
+          <p>
+            <label for="surName">Nazwisko:</label>
+            <input class="form__item" id="surName" name="surName" />
+          </p>
+
+          <p>
+            <label for="password">Hasło:</label>
+            <input
+              class="form__item"
+              id="password"
+              name="password"
+              type="password"
+            />
+          </p>
+          <p>
+            <label for="age">Wiek:</label>
+            <input class="form__item" id="age" type="number" name="age" />
+          </p>
+
+          <p>
+            <label for="photo">Zdjęcie</label>
+            <input class="form__item" id="photo" type="file" name="photo" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Kontakt:</legend>
+          <p>
+            <label for="email">Wpisz swój e-mail:</label>
+            <input
+              class="form__item"
+              id="email"
+              type="email"
+              placeholder="e-mail"
+              name="email"
+            />
+          </p>
+
+          <p>
+            <label for="tel">Wpisz swój nr telefonu:</label>
+            <input
+              class="form__item"
+              id="tel"
+              type="tel"
+              placeholder="___-___-___"
+              name="tel"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Umiejętności</legend>
+          <p>
+            <label for="english">Język angielski:</label>
+            <input
+              class="form__item"
+              id="english"
+              type="range"
+              min="0"
+              max="100"
+              step="5"
+              name=" " 
+            />
+          </p>
+
+          <p>
+            <label for="language">Języki</label>
+            <select class="form__item" name="language" id="language">
+              <option value="language-1">Niemiecki</option>
+              <option value="language-2">Hiszpański</option>
+              <option value="language-3">Chiński</option>
+              <option value="language-4">Włoski</option>
+              <option value="language-5">Rosyjski</option>
+              <option value="language-6">Francuski</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="programms"
+              >Obsługiwane programy: <br /><input
+                id="programms"
+                name="programms"
+                type="checkbox"
+                value="Photoshop"
+              />Photoshop
+
+              <br /><input
+                id="programms"
+                name="programms"
+                type="checkbox"
+                value="GIT"
+              />GIT
+
+              <br /><input
+                id="programms"
+                name="programms"
+                type="checkbox"
+                value="Terminal"
+              />Terminal
+
+              <br /><input
+                id="programms"
+                name="programms"
+                type="checkbox"
+                value="Figma"
+              />Figma</label
+            >
+          </p>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
