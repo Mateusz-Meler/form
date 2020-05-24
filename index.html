@@ -8,21 +8,19 @@
   </head>
   <body class="body">
     <main>
-
       <h1 class="header">Formularz</h1>
 
-      <form class="form">
-
+      <form method="post" action="https://dev.cotenfrontend.pl" class="form">
         <fieldset>
           <legend>Dane:</legend>
           <p>
             <label for="firstName">Imię:</label>
-            <input class="form__item" id="firstName" name="firstName" />
+            <input class="form__item" id="firstName" name="firstName" required />
           </p>
 
           <p>
             <label for="surName">Nazwisko:</label>
-            <input class="form__item" id="surName" name="surName" />
+            <input class="form__item" id="surName" name="surName" required/>
           </p>
 
           <p>
@@ -32,11 +30,12 @@
               id="password"
               name="password"
               type="password"
+              required
             />
           </p>
           <p>
             <label for="age">Wiek:</label>
-            <input class="form__item" id="age" type="number" name="age" />
+            <input class="form__item" id="age" type="number" name="age" required/>
           </p>
 
           <p>
@@ -79,7 +78,7 @@
               min="0"
               max="100"
               step="5"
-              name=" " 
+              name=" "
             />
           </p>
 
@@ -102,31 +101,44 @@
                 name="programms"
                 type="checkbox"
                 value="Photoshop"
-              />Photoshop
+              />
+              Photoshop
 
               <br /><input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="GIT"
-              />GIT
+              />
+              GIT
 
               <br /><input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="Terminal"
-              />Terminal
+              />
+              Terminal
 
               <br /><input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="Figma"
-              />Figma</label
+              />
+              Figma</label
             >
           </p>
+          <p>
+            <label for="license">Czy masz prawo jazdy?</label>
+            <br><input type="radio" name="license" value="tak" /> tak
+            <br><input type="radio" name="license" value="nie" /> nie
+          </p>
         </fieldset>
+
+        <p>
+          <input type="submit" value="Wyślij" />
+        </p>
       </form>
     </main>
   </body>
