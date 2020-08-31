@@ -32,7 +32,7 @@
       <h1 class="header">Formularz</h1>
 
       <form method="post" action="https://dev.cotenfrontend.pl" class="form">
-        <fieldset>
+        <fieldset class="date">
           <legend>Dane:</legend>
           <p>
             <label for="firstName">Imię:</label>
@@ -45,7 +45,7 @@
           </p>
 
           <p>
-            <label for="surName">Nazwisko:</label>
+            <label>Nazwisko:</label>
             <input class="form__item" id="surName" name="surName" required />
           </p>
 
@@ -72,11 +72,11 @@
 
           <p>
             <label for="photo">Zdjęcie</label>
-            <input class="form__item" id="photo" type="file" name="photo" />
+            <input class="form__item--other" id="photo" type="file" name="photo" />
           </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="contact">
           <legend>Kontakt:</legend>
           <p>
             <label for="email">Wpisz swój e-mail:</label>
@@ -101,7 +101,7 @@
           </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="skills">
           <legend>Umiejętności</legend>
           <p>
             <label for="english">Język angielski:</label>
@@ -129,7 +129,7 @@
           </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="languages">
           <legend>Obsługiwane programy:</legend>
           <p>
             <label>
@@ -180,7 +180,7 @@
           </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="license">
           <legend>
             Czy masz prawo jazdy?
           </legend>
