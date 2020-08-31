@@ -16,10 +16,7 @@
       content="Jest to projekt, który powstał podczas realizacji kursu WTF Co ten Frontend."
     />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta
-      property="og:url"
-      content="https://mateusz-meler.github.io/form/"
-    />
+    <meta property="og:url" content="https://mateusz-meler.github.io/form/" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
@@ -39,12 +36,17 @@
           <legend>Dane:</legend>
           <p>
             <label for="firstName">Imię:</label>
-            <input class="form__item" id="firstName" name="firstName" required />
+            <input
+              class="form__item"
+              id="firstName"
+              name="firstName"
+              required
+            />
           </p>
 
           <p>
             <label for="surName">Nazwisko:</label>
-            <input class="form__item" id="surName" name="surName" required/>
+            <input class="form__item" id="surName" name="surName" required />
           </p>
 
           <p>
@@ -59,7 +61,13 @@
           </p>
           <p>
             <label for="age">Wiek:</label>
-            <input class="form__item" id="age" type="number" name="age" required/>
+            <input
+              class="form__item"
+              id="age"
+              type="number"
+              name="age"
+              required
+            />
           </p>
 
           <p>
@@ -67,6 +75,7 @@
             <input class="form__item" id="photo" type="file" name="photo" />
           </p>
         </fieldset>
+
         <fieldset>
           <legend>Kontakt:</legend>
           <p>
@@ -91,6 +100,7 @@
             />
           </p>
         </fieldset>
+
         <fieldset>
           <legend>Umiejętności</legend>
           <p>
@@ -117,48 +127,65 @@
               <option value="language-6">Francuski</option>
             </select>
           </p>
+        </fieldset>
 
+        <fieldset>
+          <legend>Obsługiwane programy:</legend>
           <p>
-            <label for="programms"
-              >Obsługiwane programy: <br /><input
+            <label>
+              <input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="Photoshop"
               />
               Photoshop
+            </label>
+          </p>
 
-              <br /><input
+          <p>
+            <label>
+              <input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="GIT"
               />
               GIT
+            </label>
+          </p>
 
-              <br /><input
+          <p>
+            <label>
+              <input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="Terminal"
               />
               Terminal
+            </label>
+          </p>
 
-              <br /><input
+          <p>
+            <label>
+              <input
                 id="programms"
                 name="programms"
                 type="checkbox"
                 value="Figma"
               />
-              Figma</label
-            >
-          </p>
-          <p>
-            <label for="license">Czy masz prawo jazdy?</label>
-            <br><input type="radio" name="license" value="tak" /> tak
-            <br><input type="radio" name="license" value="nie" /> nie
+              Figma
+            </label>
           </p>
         </fieldset>
+
+        <p>
+          <label for="license">Czy masz prawo jazdy?</label>
+
+          <p><label><input type="radio" name="license" value="tak" /> tak</label></p>
+          <p><label><input type="radio" name="license" value="nie" /> nie</label></p>
+        </p>
 
         <p>
           <input type="submit" value="Wyślij" />
